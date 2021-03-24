@@ -1,0 +1,128 @@
+.credits {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    min-height: 70px;
+    padding: 25px 0px 25px 0px;
+    background-color: #F8F9FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.credits * {
+  margin: 5px 0px 5px 0px;
+}
+.credits a {
+    margin: 5px 10px 5px 10px;
+    color: #337ab7;
+    text-decoration: none;
+}
+
+.app {
+    width: 90vw;
+    min-height: 400px;
+    margin: 50px auto 80px auto;
+    padding: 40px 20px 20px 20px;
+    border: 5px solid #F8F9FA;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    transition: all 1.5s;
+}
+.app:hover {
+    box-shadow: 0px 0px 75px 5px #E9ECEF;
+}
+
+.app h1 {
+    margin: 0px 20px 0px 20px;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #808080;
+}
+
+.input-group {
+    width: 100%;
+    margin-top: 25px;
+    padding: 0px 20px 0px 20px;
+    display: flex;
+}
+
+.input-group input {
+    width: 50px;
+    flex: 1;
+    height: 41px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #808080;
+    border-right: none;
+    border-radius: 5px 0px 0px 5px;
+    transition: all 1s;
+}
+.input-group input:hover {
+    box-shadow: 0px 0px 7px 1px #808080;
+}
+.input-group input:focus {
+    border: 1px solid #2e6da4;
+    outline: none;
+    box-shadow: 0px 0px 7px 1px #66AFE9;
+}
+
+.input-group button {
+    max-width: 25vw;
+    width: 150px;
+    height: 41px;
+    background-color: #337ab7;
+    color: #fff;
+    font-size: 16px;
+    border: 1px solid #2e6da4;
+    border-radius: 0px 5px 5px 0px;
+    transition: all 1s;
+}
+.input-group button:hover {
+    background-color: #2e6da4;
+    box-shadow: 0px 0px 7px 1px #66AFE9;
+}
+.input-group button:focus {
+    outline: none;
+}
+
+.error {
+    display: none;
+    padding: 0px 20px 0px 20px;
+    margin: 5px 0px 0px 0px;
+    color: crimson;
+}
+
+.tasks-list {
+    width: 100%;
+    flex: 1;
+    margin: 15px 0px 20px 0px;
+    padding: 5px 20px 20px 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border: 2px solid #f8f8f8;
+    border-radius: 15px;
+    transition: all 1s;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 560px) {
+    .app {
+        width: 96vw;
+        margin: 40px auto 80px auto;
+        padding: 40px 5px 20px 5px;
+    }
+    .input-group {
+        padding: 0px 5px 0px 5px;
+    }
+    .tasks-list {
+        padding: 5px 5px 20px 5px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .credits {
+        padding: 5px 0px 5px 0px;
+        flex-direction: column;
+    }
+}
