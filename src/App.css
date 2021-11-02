@@ -1,0 +1,125 @@
+.credits {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    min-height: 70px;
+    padding: 25px 0 25px 0;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.credits * {
+    margin: 5px 0 5px 0;
+}
+.credits a {
+    margin: 5px 10px 5px 10px;
+    color: #337ab7;
+    text-decoration: none;
+}
+
+.app {
+    width: 90%;
+    min-height: 400px;
+    margin: 50px auto 80px auto;
+    padding: 40px 20px 20px 20px;
+    border: 5px solid #f8f9fa;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    transition: all 1.5s;
+}
+.app:hover {
+    box-shadow: 0 0 75px 5px #e9ecef;
+}
+
+.app h1 {
+    margin: 0 20px 0 20px;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #808080;
+}
+
+.input-group {
+    width: 100%;
+    margin-top: 25px;
+    padding: 0 20px 0 20px;
+    display: flex;
+}
+
+.input-group input {
+    width: 50px;
+    flex: 1;
+    height: 41px;
+    padding: 10px 20px 10px 20px;
+    font-size: 16px;
+    border: 1px solid #808080;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    transition: all 1s;
+}
+.input-group input:hover {
+    box-shadow: 0 0 7px 1px #808080;
+}
+.input-group input:focus {
+    border: 1px solid #2e6da4;
+    outline: none;
+    box-shadow: 0 0 7px 1px #66afe9;
+}
+
+.input-group button {
+    max-width: 25vw;
+    width: 150px;
+    height: 41px;
+    background-color: #337ab7;
+    color: #fff;
+    font-size: 16px;
+    border: 1px solid #2e6da4;
+    border-radius: 0 5px 5px 0;
+    transition: all 1s;
+}
+.input-group button:hover {
+    background-color: #2e6da4;
+    box-shadow: 0 0 7px 1px #66afe9;
+}
+.input-group button:focus {
+    outline: none;
+}
+
+.error {
+    display: none;
+    padding: 0 20px 0 20px;
+    margin: 5px 0 0 0;
+    color: crimson;
+}
+
+.tasks-list {
+    width: 100%;
+    flex: 1;
+    margin: 15px 0 20px 0;
+    padding: 5px 20px 20px 20px;
+    overflow-x: hidden;
+    border-radius: 15px;
+    transition: all 1s;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 560px) {
+    .app {
+        width: auto;
+        border: none;
+    }
+    .input-group {
+        padding: 0 5px 0 5px;
+    }
+    .tasks-list {
+        padding: 5px 5px 20px 5px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .credits {
+        padding: 5px 0 5px 0;
+        flex-direction: column;
+    }
+}

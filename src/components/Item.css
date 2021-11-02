@@ -1,0 +1,88 @@
+p {
+    font-size: 14px;
+}
+
+.item {
+    width: 100%;
+    margin-top: 15px;
+    padding: 15px 15px 7px 15px;
+    border: 1px solid #808080;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.strike {
+    text-decoration: line-through;
+}
+
+.task {
+    width: 100%;
+    font-size: 22px;
+}
+
+.item-props {
+    width: 100%;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-control {
+    width: 100%;
+    flex: 1;
+    margin: 0px 0px 0px 0px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.done {
+    margin: 0px 5px 0px 0px;
+    padding: 3px 7px 3px 7px;
+    background-color: #fff;
+    color: #2ecc71;
+    border: 1px solid #2ecc71;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.done:hover {
+    background-color: #2ecc71;
+    color: #fff;
+    box-shadow: 0px 0px 7px 1px #2ecc71;
+}
+
+.undone {
+    display: none;
+    margin: 0px 5px 0px 0px;
+    padding: 3px 7px 3px 7px;
+    background-color: #fff;
+    color: #7b8880;
+    border: 1px solid #7b8880;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.undone:hover {
+    background-color: #7b8880;
+    color: #fff;
+    box-shadow: 0px 0px 7px 1px #7b8880;
+}
+
+.delete {
+    margin: 0px 5px 0px 5px;
+    padding: 3px 7px 3px 7px;
+    background-color: #fff;
+    color: #e04e5f;
+    border: 1px solid #e04e5f;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.delete:hover {
+    background-color: #e04e5f;
+    color: #fff;
+    box-shadow: 0px 0px 7px 1px #e04e5f;
+}
+
+button:focus {
+    outline: none;
+}
