@@ -71,10 +71,18 @@ class App extends React.Component {
                         target="_blank"
                         rel="noreferrer"
                     >
-                        {" "}
-                        Neelabh Priyam Jha{" "}
+                        Neelabh Priyam Jha
                     </a>
-                    <p>using react.js</p>
+                    <p>
+                        using
+                        <a
+                            href="https://reactjs.org/"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            React.js
+                        </a>
+                    </p>
                 </div>
                 <div className="app">
                     <h1>ToDo App</h1>
